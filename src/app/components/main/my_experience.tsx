@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { SectionHeader } from "../section_header";
-import { Section } from "lucide-react";
 
 interface JobExperience {
   id: string;
