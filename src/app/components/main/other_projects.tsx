@@ -1,4 +1,4 @@
-import { SectionHeader } from "../section_header";
+
 
 const projects = [
   {
