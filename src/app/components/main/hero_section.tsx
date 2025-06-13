@@ -94,7 +94,7 @@ const HeroSection = () => {
           {/* Description */}
           <div className="max-w-2xl mb-12 animate-fade-in-delay">
             <p className="text-slate-400 text-lg leading-relaxed mb-4">
-              {`I'm a frontend engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at{' '}`}
+              {`I'm a frontend engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at `}
               <a 
                 href="https://luxdevhq.ai" 
                 target="_blank" 
