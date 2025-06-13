@@ -32,7 +32,7 @@ const AboutMeSection = () => {
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Fast-forward to today, and I've had the privilege of working at{" "}
+              {`Fast-forward to today, and I've had the privilege of working at`}{" "}
               <span className="text-accent">an advertising agency</span>,{" "}
               <span className="text-accent">a start-up</span>,{" "}
               <span className="text-accent">a huge corporation</span>, and{" "}
@@ -51,7 +51,7 @@ const AboutMeSection = () => {
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Here are a few technologies I've been working with recently:
+              {`Here are a few technologies I've been working with recently:`}
             </p>
 
             {/* Technologies Grid */}

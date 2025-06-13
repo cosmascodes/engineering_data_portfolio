@@ -361,7 +361,7 @@ export function Archive() {
             Archive
           </h2>
           <p className="mb-24 font-mono text-accent">
-            A big list of things I've worked on
+            {`A big list of things I've worked on`}
           </p>
         </div>
 
