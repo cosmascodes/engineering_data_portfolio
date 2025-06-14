@@ -32,77 +32,92 @@ const projects = [
   },
 ];
 
+
 const Projects = () => {
   return (
     <section className="px-6 py-16 md:px-12 lg:px-24">
       <div className="max-w-3xl">
         <SectionHeader number="03" title="Some Things I've Built" />
       </div>
-
-      <div className="space-y-32">
+      <div className="space-y-20 md:space-y-32">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`max-w-5xl mx-auto grid grid-cols-2 relative min-h-[380px] ${
-              project.align === "right" ? "" : "flex-row-reverse"
-            }`}
+            className="relative max-w-5xl mx-auto min-h-[300px] md:min-h-[380px] flex items-center"
           >
-            {/* Image Container */}
-            <div
-              className={`absolute h-full w-[60%] flex items-center ${
-                project.align === "right" ? "left-0" : "right-0"
-              }`}
-            >
-              <div className="w-full h-[90%] relative overflow-hidden">
+            {/* Background Image - Mobile Full Width */}
+            <div className="md:hidden absolute inset-0 w-full h-full">
+              <div className="relative w-full h-full overflow-hidden rounded">
                 <Image
                   src={project.image}
                   fill
-                  className="w-full h-full object-cover opacity-45"
+                  className="object-cover"
                   alt={`${project.title} preview`}
                 />
-                <div className="absolute inset-0 bg-accent/40 border-[0.2px] border-accent/10 rounded transition-all duration-300 hover:bg-transparent" />
+                <div className="absolute inset-0 bg-slate-800/60 border-[0.2px] border-slate-800/10" />
               </div>
             </div>
-
-            {/* Content */}
+            
+            {/* Background Image - Desktop */}
             <div
-              className={`flex flex-col gap-2  justify-center-safe ${
+              className={`hidden md:block absolute inset-y-0 w-[60%] ${
+                project.align === "right" ? "left-0" : "right-0"
+              }`}
+            >
+              <div className="relative w-full h-full overflow-hidden rounded flex items-center">
+                <div className="relative w-full h-[90%]">
+                  <Image
+                    src={project.image}
+                    fill
+                    className="object-cover rounded"
+                    alt={`${project.title} preview`}
+                  />
+                  <div className="absolute inset-0 bg-accent/40 border-[0.2px] border-accent/10 hover:bg-transparent transition-all duration-300 rounded" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Content Container - Vertically centered */}
+            <div
+              className={`relative z-10 w-full ${
                 project.align === "right"
-                  ? "items-end-safe col-start-2"
-                  : "items-start-safe col-start-1"
+                  ? "md:flex md:justify-end"
+                  : "md:flex md:justify-start"
               }`}
             >
               <div
-                className={`flex flex-col mb-3 ${
-                  project.align === "right" ? "text-right" : "text-left"
+                className={`w-full p-6 md:p-0 rounded md:rounded-none ${
+                  project.align === "right"
+                    ? "md:text-right md:w-[60%] md:pr-8"
+                    : "md:text-left md:w-[60%] md:pl-8"
                 }`}
               >
-                <span className="text-sm text-accent">Featured Project</span>
-                <h2 className="text-2xl font-bold text-white">
-                  {project.title}
-                </h2>
+                <div className="mb-3">
+                  <span className="text-sm text-accent">Featured Project</span>
+                  <h2 className="text-2xl font-bold text-white">
+                    {project.title}
+                  </h2>
+                </div>
+                
+                <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 rounded md:backdrop-blur-sm">
+                  <p className="text-slate-300">{project.description}</p>
+                </div>
+                
+                <ul
+                  className={`flex flex-wrap gap-2 text-slate-400 text-sm ${
+                    project.align === "right" ? "md:justify-end" : "md:justify-start"
+                  }`}
+                >
+                  {project.tags.map((tech) => (
+                    <li key={tech}>{tech}</li>
+                  ))}
+                </ul>
               </div>
-              <div
-                className={`bg-slate-800 py-4 px-8 my-4 ${
-                  project.align === "right" ? "text-right" : "text-left"
-                } backdrop-blur-sm`}
-              >
-                <p className="text-slate-300">{project.description}</p>
-              </div>
-              <ul
-                className={`flex flex-wrap gap-2 text-slate-400 text-sm ${
-                  project.align === "right" ? "justify-end" : "justify-start"
-                }`}
-              >
-                {project.tags.map((tech) => (
-                  <li key={tech}>{tech}</li>
-                ))}
-              </ul>
             </div>
           </div>
         ))}
         
-      <OtherProjects/>
+        <OtherProjects/>
       </div>
     </section>
   );
