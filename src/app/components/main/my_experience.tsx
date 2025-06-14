@@ -37,17 +37,6 @@ const jobExperiences: JobExperience[] = [
     ],
   },
   {
-    id: "scout-studio",
-    company: "Scout Studio",
-    role: "Studio Developer @ Scout Studio",
-    period: "January - June 2017",
-    responsibilities: [
-      "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-      "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
-      "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
-    ],
-  },
-  {
     id: "starry",
     company: "Starry",
     role: "Software Engineer @ Starry",
@@ -80,29 +69,27 @@ export default function InteractiveResume() {
   };
 
   return (
-    <section className="px-16 py-16 md:px-12 lg:px-24">
+    <section className="px-6 py-16 md:px-12 lg:px-24">
       <div className="max-w-3xl">
         <SectionHeader number="02" title="Where I've Worked" />
       </div>
-      
+
       {/* Mobile/Tablet Layout - Horizontal Tabs */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden max-w-3xl">
         {/* Horizontal scrollable tabs */}
         <div className="overflow-x-auto scrollbar-hide mb-8">
-          <div className="flex border-b border-slate-700/50 min-w-max">
+          <div className="flex border-b border-slate-700/50 w-full">
             {jobExperiences.map((job) => (
               <div
                 key={job.id}
                 onClick={() => setActiveJob(job.id)}
-                className={`px-4 py-3 cursor-pointer transition-all duration-200 border-b-2 whitespace-nowrap ${
+                className={`flex-1 px-4 py-3 cursor-pointer transition-all duration-200 border-b-2 text-center ${
                   activeJob === job.id
                     ? "border-b-accent text-accent"
                     : "border-b-transparent text-slate-400 hover:text-slate-300"
                 }`}
               >
-                <div className="font-medium text-sm">
-                  {job.company}
-                </div>
+                <div className="font-medium text-sm">{job.company}</div>
               </div>
             ))}
           </div>
@@ -211,7 +198,7 @@ export default function InteractiveResume() {
           -ms-overflow-style: none;
           scrollbar-width: none;
         }
-        
+
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }

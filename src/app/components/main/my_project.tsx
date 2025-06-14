@@ -54,7 +54,7 @@ const Projects = () => {
                   className="object-cover"
                   alt={`${project.title} preview`}
                 />
-                <div className="absolute inset-0 bg-slate-800/60 border-[0.2px] border-slate-800/10" />
+                <div className="absolute inset-0 bg-slate-800/80 border-[0.2px] border-slate-800/10" />
               </div>
             </div>
             
