@@ -4,7 +4,7 @@ import { Github, Instagram, Twitter, Linkedin, Codepen } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center px-6 pb-16 md:px-12 lg:px-24">
+    <section className="relative flex items-center px-6 py-16 md:px-12 lg:px-24">
       {/* Left Side Icons */}
       <div className="fixed left-8 bottom-0 z-40 hidden lg:flex flex-col items-center space-y-6">
         <div className="flex flex-col space-y-6">
