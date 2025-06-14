@@ -62,7 +62,7 @@ const HeroSection = () => {
       <div className="fixed right-8 bottom-0 z-40 hidden lg:flex flex-col items-center">
         <div className="mb-6">
           <a 
-            href="mailto:brittany.chiang@gmail.com"
+            href="mailto:cosmascodes@gmail.com"
             className="text-slate-400 hover:text-accent transition-all duration-300 ease-in-out hover:-translate-y-1 font-mono text-sm tracking-wider"
             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
           >
