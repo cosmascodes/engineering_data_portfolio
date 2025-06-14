@@ -80,13 +80,13 @@ export default function InteractiveResume() {
   };
 
   return (
-    <section className="px-6 py-16 md:px-12 lg:px-24">
+    <section className="px-16 py-16 md:px-12 lg:px-24">
       <div className="max-w-3xl">
         <SectionHeader number="02" title="Where I've Worked" />
       </div>
       
       {/* Mobile/Tablet Layout - Horizontal Tabs */}
-      <div className="md:hidden max-w-5xl w-full">
+      <div className="md:hidden w-full">
         {/* Horizontal scrollable tabs */}
         <div className="overflow-x-auto scrollbar-hide mb-8">
           <div className="flex border-b border-slate-700/50 min-w-max">
@@ -135,7 +135,7 @@ export default function InteractiveResume() {
       </div>
 
       {/* Desktop Layout - Vertical Sidebar */}
-      <div className="hidden md:block overflow-hidden max-w-5xl w-full min-h-[500px]">
+      <div className="hidden md:block overflow-hidden max-w-4xl w-full min-h-[500px]">
         <div className="flex">
           {/* Sidebar */}
           <div className="w-64">
