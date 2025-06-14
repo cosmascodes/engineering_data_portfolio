@@ -39,7 +39,7 @@ const AboutMeSection = () => {
               <span className="text-accent">a student-led design studio</span>.
               My main focus these days is building accessible, inclusive
               products and digital experiences at{" "}
-              <span className="text-accent">Upstatement</span> for a variety of
+              <span className="text-accent">LuxDevHQ</span> for a variety of
               clients.
             </p>
 
@@ -76,12 +76,12 @@ const AboutMeSection = () => {
               {/* Image container */}
               <div className="relative bg-accent rounded overflow-hidden w-64 h-80">
                 <img
-                  src="/api/placeholder/300/400"
-                  alt="Brittany's profile"
+                  src="/images/profile.jpg"
+                  alt="Cosmas' profile"
                   className="w-full h-full object-cover mix-blend-multiply group-hover:mix-blend-normal transition-all duration-300"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-accent opacity-60 group-hover:opacity-0 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-accent opacity-50 group-hover:opacity-0 transition-opacity duration-300"></div>
               </div>
             </div>
           </div>
