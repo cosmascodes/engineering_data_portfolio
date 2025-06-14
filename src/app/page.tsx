@@ -14,7 +14,7 @@ export default function Home() {
         <WhatsNext />
         
         <div className="max-w-5xl mx-auto mt-16 sm:mt-24 md:mt-32 text-center text-xs sm:text-sm text-slate-400 px-4">
-          <p>Designed & Built by Brittany Chiang</p>
+          <p>Built by Cosmas Ngeno</p>
           <p className="mt-2 font-mono text-xs">7,908J4,861</p>
         </div>
     </div>
