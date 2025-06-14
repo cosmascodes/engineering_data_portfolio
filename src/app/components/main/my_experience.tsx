@@ -122,7 +122,7 @@ export default function InteractiveResume() {
       </div>
 
       {/* Desktop Layout - Vertical Sidebar */}
-      <div className="hidden md:block overflow-hidden max-w-4xl w-full min-h-[500px]">
+      <div className="hidden md:block overflow-hidden max-w-4xl mx-auto w-full min-h-[500px]">
         <div className="flex">
           {/* Sidebar */}
           <div className="w-64">

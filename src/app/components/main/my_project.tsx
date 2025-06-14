@@ -17,7 +17,7 @@ const projects = [
     title: "Spotify Profile",
     description:
       "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-    tags: ["React", "Styled Components", "Express", "Spotify API", "Heroku"],
+    tags: ["React", "Styled Components", "Express", "Spotify API"],
     image: "/images/halcyon.avif",
     align: "left",
   },
@@ -39,7 +39,7 @@ const Projects = () => {
       <div className="max-w-3xl">
         <SectionHeader number="03" title="Some Things I've Built" />
       </div>
-      <div className="space-y-20 md:space-y-32">
+      <div className="space-y-20 md:space-y-32 max-w-4xl mx-auto">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -65,7 +65,7 @@ const Projects = () => {
               }`}
             >
               <div className="relative w-full h-full overflow-hidden rounded flex items-center">
-                <div className="relative w-full h-[90%]">
+                <div className="relative w-full h-[80%]">
                   <Image
                     src={project.image}
                     fill
@@ -100,7 +100,7 @@ const Projects = () => {
                 </div>
                 
                 <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 md:backdrop-blur-sm">
-                  <p className="text-slate-300">{project.description}</p>
+                  <p className="text-slate-300 text-sm">{project.description}</p>
                 </div>
                 
                 <ul

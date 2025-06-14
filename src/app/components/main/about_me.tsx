@@ -23,7 +23,7 @@ const AboutMeSection = () => {
         <div className="grid md:grid-cols-3 gap-12 items-start">
           {/* Text Content */}
           <div className="md:col-span-2 space-y-6">
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               Hello! My name is Cosmas and I enjoy creating things that live
               on the internet. My interest in web development started back in
               2012 when I decided to try editing custom Tumblr themes — turns
@@ -31,7 +31,7 @@ const AboutMeSection = () => {
               HTML & CSS!
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               {`Fast-forward to today, and I've had the privilege of working at`}{" "}
               <span className="text-accent">an advertising agency</span>,{" "}
               <span className="text-accent">a start-up</span>,{" "}
@@ -43,14 +43,14 @@ const AboutMeSection = () => {
               clients.
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               I also recently{" "}
               <span className="text-accent">launched a course</span> that covers
               everything you need to build a web app with the Spotify API using
               Node & React.
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               {`Here are a few technologies I've been working with recently:`}
             </p>
 
@@ -59,7 +59,7 @@ const AboutMeSection = () => {
               {technologies.map((tech, index) => (
                 <div key={index} className="flex items-center">
                   <span className="text-accent mr-2">▹</span>
-                  <span className="text-gray-300 font-mono text-sm">
+                  <span className="text-gray-400 font-mono text-sm">
                     {tech}
                   </span>
                 </div>
