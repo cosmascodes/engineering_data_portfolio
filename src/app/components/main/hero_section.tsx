@@ -110,7 +110,8 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="animate-fade-in-delay-2">
             <a 
-              href="#course" 
+              href="/resume/Cosmas_Ngeno.pdf" 
+              target='_blank'
               className="inline-block px-8 py-4 border-2 border-accent text-accent hover:text-background rounded-sm hover:bg-accent hover:bg-opacity-10 transition-all duration-300 font-mono text-sm tracking-wider hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/20"
             >
               Check out my Resume!
