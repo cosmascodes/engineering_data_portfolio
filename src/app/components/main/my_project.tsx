@@ -99,7 +99,7 @@ const Projects = () => {
                   </h2>
                 </div>
                 
-                <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 rounded md:backdrop-blur-sm">
+                <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 md:backdrop-blur-sm">
                   <p className="text-slate-300">{project.description}</p>
                 </div>
                 
