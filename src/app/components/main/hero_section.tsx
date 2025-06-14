@@ -82,7 +82,7 @@ const HeroSection = () => {
           </p>
 
           {/* Name */}
-          <h1 className="text-slate-200 font-bold text-4xl sm:text-6xl lg:text-7xl mb-2 leading-tight animate-slide-up">
+          <h1 className="text-slate-300 font-bold text-4xl sm:text-6xl lg:text-7xl mb-2 leading-tight animate-slide-up">
             Cosmas Ngeno.
           </h1>
 

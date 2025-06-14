@@ -3,7 +3,7 @@ export function WhatsNext() {
     <section className="px-6 pt-32 md:px-12 lg:px-24 text-center mx-auto">
       <div className="max-w-xl mx-auto">
         <h2 className="text-accent text-sm font-mono mb-4">{`04. What's Next?`}</h2>
-        <h3 className="text-white text-3xl md:text-4xl font-bold mb-6">
+        <h3 className="text-slate-300 text-3xl md:text-4xl font-bold mb-6">
           Get In Touch
         </h3>
         <p className="text-slate-400 mb-10 leading-relaxed">

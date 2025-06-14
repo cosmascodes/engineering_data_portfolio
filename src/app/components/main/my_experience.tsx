@@ -98,7 +98,7 @@ export default function InteractiveResume() {
         {/* Content for mobile */}
         <div className="animate-fadeIn">
           <div className="mb-6">
-            <h2 className="text-xl font-semibold text-white mb-2">
+            <h2 className="text-xl font-semibold text-slate-300 mb-2">
               {getActiveJobDetails().role}
             </h2>
             <p className="text-slate-400 text-sm font-medium">
@@ -153,7 +153,7 @@ export default function InteractiveResume() {
           <div className="flex-1 px-8 py-3">
             <div className="animate-fadeIn">
               <div className="mb-8">
-                <h2 className="text-2xl font-semibold text-white mb-2">
+                <h2 className="text-2xl font-semibold text-slate-300 mb-2">
                   {getActiveJobDetails().role}
                 </h2>
                 <p className="text-slate-400 text-sm font-medium">

@@ -42,7 +42,7 @@ export function OtherProjects() {
   return (
     <section className="pt-16 mt-32">
       <div className="mb-12 text-center">
-        <h2 className="text-white text-2xl md:text-3xl font-semibold">
+        <h2 className="text-slate-300 text-2xl md:text-3xl font-semibold">
           Other Noteworthy Projects
         </h2>
         <a
@@ -120,7 +120,7 @@ export function OtherProjects() {
               </div>
             </div>
 
-            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">
+            <h3 className="text-xl font-bold text-slate-300 mb-3 group-hover:text-accent transition-colors">
               {project.title}
             </h3>
             <p className="text-slate-400 mb-5 text-sm leading-relaxed flex-grow">

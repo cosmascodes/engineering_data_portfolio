@@ -94,7 +94,7 @@ const Projects = () => {
               >
                 <div className="mb-3">
                   <span className="text-sm text-accent">Featured Project</span>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-slate-300">
                     {project.title}
                   </h2>
                 </div>
