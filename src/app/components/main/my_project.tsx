@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { SectionHeader } from "../section_header";
 import { OtherProjects } from "./other_projects";
@@ -12,7 +11,6 @@ const projects = [
     tags: ["Sublime Text", "Atom", "iTerm2", "VS Code", "Hyper"],
     image: "/images/luxdev.png",
     align: "right",
-    url: "https://www.luxdevhq.ai/prep-program",
   },
   {
     id: 2,
@@ -22,7 +20,6 @@ const projects = [
     tags: ["React", "Styled Components", "Express", "Spotify API"],
     image: "/images/mizizi.png",
     align: "left",
-    url: "https://miziziwellness.co.ke/",
   },
   {
     id: 3,
@@ -32,7 +29,6 @@ const projects = [
     tags: ["React", "Express", "Spotify API", "Styled Components"],
     image: "/images/afyareach.png",
     align: "right",
-    url: "https://afyareach.vercel.app/",
   },
 ];
 
@@ -71,13 +67,13 @@ const Projects = () => {
                 <div className="relative w-full h-[80%]">
                   <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="relative rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                      <iframe
-                        src={project.url}
-                        className="w-full h-full border-0 rounded scale-100 hide-iframe-scrollbar"
-                        title={`${project.title} preview`}
-                        sandbox="allow-scripts allow-same-origin"
+                      <Image
+                        src={project.image}
+                        fill
+                        className="object-cover rounded"
+                        alt={`${project.title} preview`}
                       />
-                      <div className="absolute inset-0 bg-accent/25 border-[0.2px] border-accent/10 hover:bg-transparent transition-all duration-300 rounded pointer-events-none" />
+                      <div className="absolute inset-0 bg-accent/25 border-[0.2px] border-accent/10 hover:bg-transparent transition-all duration-300 rounded" />
                     </div>
                   </div>
                   <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
