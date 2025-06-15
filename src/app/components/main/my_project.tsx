@@ -7,8 +7,14 @@ const projects = [
     id: 1,
     title: "LuxDevHQ",
     description:
-      "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-    tags: ["Sublime Text", "Atom", "iTerm2", "VS Code", "Hyper"],
+      "Lead Frontend Engineer building high-quality websites, design systems, and cross-platform digital experiences for diverse clients using React, TypeScript, and Next.js. Spearheaded company-wide accessibility initiatives and architected technical solutions including content management systems and REST APIs.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+    ],
     image: "/images/luxdev.png",
     align: "right",
   },
@@ -16,8 +22,8 @@ const projects = [
     id: 2,
     title: "Mizizi Wellness Org",
     description:
-      "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-    tags: ["React", "Styled Components", "Express", "Spotify API"],
+      "Designed and developed a responsive event website for a major wellness Padathon using Next.js, with features to enhance attendee experience. Built the site on a tight deadline while ensuring mobile accessibility and integrating social media sharing features to increase event visibility.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Responsive Design"],
     image: "/images/mizizi.png",
     align: "left",
   },
@@ -25,13 +31,12 @@ const projects = [
     id: 3,
     title: "AfyaReach Org",
     description:
-      "Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you'll have an app deployed to the internet you can add to your portfolio.",
-    tags: ["React", "Express", "Spotify API", "Styled Components"],
+      "Developed frontend components and interfaces for health-tech platforms using Next.js, React, and modern CSS frameworks. Built responsive UI designs ensuring seamless user experience across devices for healthcare users, and collaborating with UX designers to create intuitive interfaces for complex health management workflows.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/afyareach.png",
     align: "right",
   },
 ];
-
 const Projects = () => {
   return (
     <section className="px-6 py-16 md:px-12 lg:px-24">
