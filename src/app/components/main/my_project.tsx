@@ -79,7 +79,7 @@ const Projects = () => {
             
             {/* Content Container - Vertically centered */}
             <div
-              className={`relative z-10 w-full ${
+              className={`relative z-10 w-full mouse-even pointer-events-none ${
                 project.align === "right"
                   ? "md:flex md:justify-end"
                   : "md:flex md:justify-start"
@@ -99,7 +99,7 @@ const Projects = () => {
                   </h2>
                 </div>
                 
-                <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 md:backdrop-blur-sm">
+                <div className="bg-transparent md:bg-slate-800 py-4 md:px-6 my-4 md:backdrop-blur-sm rounded">
                   <p className="text-slate-300 text-sm">{project.description}</p>
                 </div>
                 
