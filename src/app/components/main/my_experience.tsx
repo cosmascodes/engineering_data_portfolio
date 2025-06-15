@@ -13,54 +13,47 @@ interface JobExperience {
 
 const jobExperiences: JobExperience[] = [
   {
-    id: "upstatement",
-    company: "Upstatement",
-    role: "Lead Engineer @ Upstatement",
-    period: "May 2018 - Present",
+    id: "luxdevhq",
+    company: "LuxDevHQ",
+    role: "Lead Frontend Engineer @ LuxDevHQ",
+    period: "Feb 2025 - Present",
     responsibilities: [
-      "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more",
-      "Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements",
-      "Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders",
-      "Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship",
+      "Build, style, and ship high-quality websites, design systems, mobile apps, and cross-platform digital experiences for diverse clients using React, TypeScript, and modern frontend technologies",
+      "Lead the development and architecture of technical tools like content management systems, REST APIs, and continuous integration pipelines to fulfil business requirements",
+      "Work alongside product and project managers, designers, and other engineers to transform creative concepts into refined digital experiences at an agile (2 week) cadence",
+      "Provide leadership within engineering department through close collaboration, building tools to improve developer experience, and mentorship",
+      "Spearhead company-wide accessibility initiatives such as creating documentation for best practices, establishing comprehensive accessibility checklist for developers, and facilitating knowledge shares",
     ],
   },
   {
-    id: "apple",
-    company: "Apple",
-    role: "UI Engineer Co-op @ Apple",
-    period: "July - December 2017",
+    id: "miziziwellness",
+    company: "Mizizi Wellness Org",
+    role: "Frontend Designer @ Mizizi Wellness Org",
+    period: "April 2025",
     responsibilities: [
-      "Developed and styled interactive web applications for Apple Music using Ember and SCSS",
-      "Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations",
-      "Architected and implemented the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback",
-      "Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications",
+      "Designed and developed a responsive event website for a major wellness conference on a tight deadline",
+      "Collaborated with event organizers to translate event requirements into an engaging digital experience",
+      "Created interactive maps and agenda features to enhance attendee experience",
+      "Optimized the site for mobile devices to ensure accessibility for all event participants",
+      "Integrated social media sharing and community engagement features to increase event visibility",
     ],
   },
   {
-    id: "starry",
-    company: "Starry",
-    role: "Software Engineer @ Starry",
-    period: "July - December 2016",
+    id: "afyareach",
+    company: "AfyaReach Org",
+    role: "Developer @ AfyaReach Org",
+    period: "March 2025",
     responsibilities: [
-      "Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS",
-      "Proposed and implemented scalable solutions to issues identified with cloud infrastructure and service architecture",
-      "Collaborated with designers and other developers to ensure thoughtful and coherent user experiences across Starry's iOS and Android mobile apps",
-    ],
-  },
-  {
-    id: "mullenlowe",
-    company: "MullenLowe",
-    role: "Creative Technologist @ MullenLowe",
-    period: "July - December 2015",
-    responsibilities: [
-      "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-      "Worked with a team of designers, project managers, and other developers to build beautiful and engaging experiences for brands like Jetblue, Lovesac, U.S. Cellular, and more",
+      "Developed frontend components and interfaces for health-tech platforms using JavaScript, React, and CSS frameworks",
+      "Built responsive UI designs ensuring seamless user experience across devices for healthcare users",
+      "Implemented authentication systems and secure data handling practices for sensitive health information",
+      "Collaborated with UX designers to create intuitive interfaces for complex health management workflows",
     ],
   },
 ];
 
 export default function InteractiveResume() {
-  const [activeJob, setActiveJob] = useState<string>("upstatement");
+  const [activeJob, setActiveJob] = useState<string>("luxdevhq");
 
   const getActiveJobDetails = () => {
     return (

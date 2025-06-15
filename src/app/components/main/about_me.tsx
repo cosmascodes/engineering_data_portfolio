@@ -7,9 +7,9 @@ const AboutMeSection = () => {
     "JavaScript (ES6+)",
     "TypeScript",
     "React",
-    "Eleventy",
+    "NextJs",
     "Node.js",
-    "WordPress",
+    "Python",
   ];
 
   return (
@@ -24,30 +24,32 @@ const AboutMeSection = () => {
           {/* Text Content */}
           <div className="md:col-span-2 space-y-6">
             <p className="text-gray-400 leading-relaxed">
-              Hello! My name is Cosmas and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS!
+              Hello! My name is Cosmas and I enjoy creating things that live on
+              the internet. My web development journey began in 2016 when I
+              started recreating Facebook forms as practice projects. Codecademy
+              was instrumental in teaching me HTML & CSS fundamentals during
+              those early days.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              {`Fast-forward to today, and I've had the privilege of working at`}{" "}
-              <span className="text-accent">an advertising agency</span>,{" "}
-              <span className="text-accent">a start-up</span>,{" "}
-              <span className="text-accent">a huge corporation</span>, and{" "}
-              <span className="text-accent">a student-led design studio</span>.
-              My main focus these days is building accessible, inclusive
-              products and digital experiences at{" "}
-              <span className="text-accent">LuxDevHQ</span> for a variety of
-              clients.
+              {`Over the years, I've been fortunate to collaborate with diverse
+              organizations including`}{" "}
+              <span className="text-accent">AfyaReach</span>,{" "}
+              <span className="text-accent">MiziziWellness.org</span>, and{" "}
+              <span className="text-accent">LuxDevHQ</span>. These experiences
+              have shaped my passion for building accessible, inclusive digital
+              products that make a real difference. Today,{" "}
+              <span className="text-accent">
+                I focus on creating meaningful web experiences{" "}
+              </span>
+              that prioritize user accessibility and inclusive design for
+              clients across various industries.{" "}
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              I also recently{" "}
-              <span className="text-accent">launched a course</span> that covers
-              everything you need to build a web app with the Spotify API using
-              Node & React.
+              Recently, I have been <span className="text-accent">exploring the data engineering side of things</span>,
+              learning how to build robust data pipelines and infrastructure
+              that power more effective digital products.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
